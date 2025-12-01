@@ -50,7 +50,7 @@
             color: #1e293b; /* Slate 800 */
         }
 
-        /* Custom style for the skill bar animation */
+        
         .skill-bar-inner {
             transition: width 1.5s ease-out;
             width: 0%; /* Initial state for animation */
@@ -60,7 +60,6 @@
 
 <body class="antialiased">
 
-    <!-- Header & Navigation -->
     <header class="sticky top-0 z-50 bg-white shadow-lg">
         <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
             <div class="text-xl font-bold text-primary">
@@ -75,12 +74,12 @@
                 <a href="#certs" class="text-gray-700 hover:text-primary transition duration-150">Certificates</a>
                 <a href="#contact" class="text-gray-700 hover:text-primary transition duration-150">Contact</a>
             </div>
-            <!-- Mobile Menu Button (Hamburger) -->
+           
             <button id="mobile-menu-button" class="sm:hidden p-2 text-gray-700 rounded-lg hover:bg-gray-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
-        <!-- Mobile Menu Dropdown -->
+      
         <div id="mobile-menu" class="sm:hidden hidden bg-white shadow-xl">
             <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
             <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Skills & Stats</a>
@@ -266,10 +265,10 @@
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Featured Projects</h2>
 
-                <!-- Projects Grid -->
+               
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    <!-- Project Card 1 -->
+                   
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300 transform hover:scale-[1.02] animate-[fadeIn_0.5s_ease-out_forwards]">
                         <img src="https://placehold.co/600x400/374151/ffffff?text=E-commerce+Platform" alt="E-commerce Platform" class="w-full h-40 object-cover">
                         <div class="p-6">
@@ -287,7 +286,7 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 2 -->
+                  
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300 transform hover:scale-[1.02] animate-[fadeIn_0.7s_ease-out_forwards]">
                         <img src="https://placehold.co/600x400/4b5563/ffffff?text=Data+Visualization+Tool" alt="Data Visualization Tool" class="w-full h-40 object-cover">
                         <div class="p-6">
@@ -303,7 +302,7 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 3 -->
+              
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300 transform hover:scale-[1.02] animate-[fadeIn_0.9s_ease-out_forwards]">
                         <img src="https://placehold.co/600x400/6b7280/ffffff?text=Mobile+App+Concept" alt="Mobile App Concept" class="w-full h-40 object-cover">
                         <div class="p-6">
@@ -323,20 +322,19 @@
             </div>
         </section>
 
-        <!-- 4. Certificates Section -->
         <section id="certs" class="py-20 bg-slate-50">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Certifications & Awards</h2>
 
                 <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Certificate Item 1 -->
+                    
                     <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary animate-[fadeIn_0.5s_ease-out_forwards]">
                         <h3 class="text-xl font-semibold text-slate-800">OOPs in Python</h3>
                         <p class="text-gray-600 mt-1">Scaler | Issued: March 2025</p>
                         <p class="text-sm text-gray-500 mt-2">Demonstrated mastery of advanced Python concepts, including Object-Oriented Programming (OOP) principles, inheritance, and encapsulation.</p>
                     </div>
 
-                    <!-- Certificate Item 2 -->
+                 
                     <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary animate-[fadeIn_0.7s_ease-out_forwards]">
                         <h3 class="text-xl font-semibold text-slate-800">JavaScript</h3>
                         <p class="text-gray-600 mt-1">GeekForGeeks | Issued: Sep 2025</p>
@@ -348,7 +346,7 @@
                         <p class="text-sm text-gray-500 mt-2">Expertise validated in cleaning, analyzing, and presenting complex datasets effectively..</p>
                     </div>
 
-                    <!-- Certificate Item 3 -->
+                  
                     <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary animate-[fadeIn_0.9s_ease-out_forwards]">
                         <h3 class="text-xl font-semibold text-slate-800">Blockchain</h3>
                         <p class="text-gray-600 mt-1">Kerala | Issued: Nov 2052</p>
@@ -358,7 +356,7 @@
             </div>
         </section>
 
-        <!-- 5. Contact Section -->
+        
         <section id="contact" class="py-20 bg-dark-bg text-light-text">
             <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl font-bold mb-4 text-white">Let's Connect</h2>
@@ -402,23 +400,20 @@
         <p class="text-sm text-gray-400">&copy; 2025 Harsha Vardhan R. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for Interactivity -->
+
     <script>
-        // Smooth scrolling and mobile menu toggle logic
+       
         document.addEventListener('DOMContentLoaded', () => {
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const skillSection = document.getElementById('skills');
             const skillBars = document.querySelectorAll('.skill-bar-inner');
 
-            // 1. Mobile Menu Toggle
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
 
-            // 2. Skill Bar Animation (Intersection Observer)
-            // This makes the skill bars animate only when they come into view,
-            // which provides a nice interactive effect (the "bars and graphs" animation).
+            
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',
@@ -434,18 +429,18 @@
                             // Set the final width to trigger the CSS transition
                             bar.style.width = `${level}%`;
                         });
-                        // Stop observing once animation has run
+                        
                         observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
 
-            // Start observing the skills section
+          
             if (skillSection) {
                 observer.observe(skillSection);
             }
 
-            // 3. Simulated Form Submission
+            
             window.handleFormSubmit = function(event) {
                 event.preventDefault();
                 // In a real application, you would send this data to a server (e.g., Firebase, Formspree).
@@ -461,3 +456,4 @@
     </script>
 </body>
 </html>
+
