@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html lang="en">
@@ -462,3 +463,468 @@
 </body>
 </html>
 
+=======
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4f46e5', // Indigo 600
+                        'secondary': '#6366f1', // Indigo 500
+                        'dark-bg': '#0f172a', // Slate 900
+                        'light-text': '#f1f5f9', // Slate 100
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        loadBar: {
+                            '0%': { width: '0%' },
+                        }
+                    },
+                    animation: {
+                        fadeIn: 'fadeIn 0.6s ease-out forwards',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ensures smooth scroll behavior for in-page navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Set default font to Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Slate 50 */
+            color: #1e293b; /* Slate 800 */
+        }
+
+        /* Custom style for the skill bar animation */
+        .skill-bar-inner {
+            transition: width 1.5s ease-out;
+            width: 0%; /* Initial state for animation */
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <div class="text-xl font-bold text-primary">
+                
+               Harsha Vardhan 
+            </div>
+            <div class="hidden sm:flex space-x-6 text-sm font-medium">
+                <a href="#about" class="text-gray-700 hover:text-primary transition duration-150">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-primary transition duration-150">Skills & Stats</a>
+                <a href="#education" class="text-gray-700 hover:text-primary transition duration-150">Education</a>
+                <a href="#projects" class="text-gray-700 hover:text-primary transition duration-150">Projects</a>
+                <a href="#certs" class="text-gray-700 hover:text-primary transition duration-150">Certificates</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary transition duration-150">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button id="mobile-menu-button" class="sm:hidden p-2 text-gray-700 rounded-lg hover:bg-gray-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="sm:hidden hidden bg-white shadow-xl">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Skills & Stats</a>
+            <a href="#education" class="block py-2 px-4 text-sm hover:bg-gray-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Education</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+            <a href="#certs" class="block py-2 px-4 text-sm hover:bg-gray-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Certificates</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Hero / About Section -->
+        <section id="about" class="pt-20 pb-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <!-- Placeholder for Profile Picture -->
+                    <div class="w-24 h-24 rounded-full bg-gray-200 mx-auto mb-6 flex items-center justify-center border-10 border-primary shadow-lg">
+                        H V
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-4 animate-[fadeIn_0.5s_ease-out_forwards]">
+                        Hi, I'm <span class="text-primary">Harsha Vardhan R</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 animate-[fadeIn_0.7s_ease-out_forwards]">
+                        A passionate Full Stack Developer focused on building accessible, user-friendly, and performant web applications.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 sm:gap-8 text-md text-gray-700 font-medium mb-12">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-primary font-bold">Age:</span>
+                            <span>21 Years</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-primary font-bold">Contact:</span>
+                            <a href="tel:+916362433439" class="hover:text-secondary transition duration-150">+91 98765 43210</a>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-primary font-bold">Location:</span>
+                            <span>Bengaluru, Karnataka, India</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-xl shadow-lg text-white bg-primary hover:bg-secondary transition duration-300 transform hover:scale-105 animate-[fadeIn_0.9s_ease-out_forwards]">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Skills & Stats Section (Bars and Graphs) -->
+        <section id="skills" class="py-20 bg-dark-bg text-light-text">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-white">Skills & Competency</h2>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Skill Progress Bars -->
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-secondary">Technical Proficiency</h3>
+                        <!-- Skill Item 1 -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium">JavaScript</span>
+                                <span class="text-sm font-semibold text-primary" data-skill-level="90%">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2.5">
+                                <div class="skill-bar-inner bg-primary h-2.5 rounded-full" style="width: 0%;" data-level="90"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item 2 -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium">React & Frameworks</span>
+                                <span class="text-sm font-semibold text-primary" data-skill-level="85%">85%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2.5">
+                                <div class="skill-bar-inner bg-primary h-2.5 rounded-full" style="width: 0%;" data-level="85"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item 3 -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium">Python</span>
+                                <span class="text-sm font-semibold text-primary" data-skill-level="75%">75%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2.5">
+                                <div class="skill-bar-inner bg-primary h-2.5 rounded-full" style="width: 0%;" data-level="75"></div>
+                            </div>
+                        </div>
+                        
+                         <!-- Skill Item 4 -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium">Database (SQL)</span>
+                                <span class="text-sm font-semibold text-primary" data-skill-level="70%">70%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2.5">
+                                <div class="skill-bar-inner bg-primary h-2.5 rounded-full" style="width: 0%;" data-level="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium">HTML&CSS</span>
+                                <span class="text-sm font-semibold text-primary" data-skill-level="90%">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2.5">
+                                <div class="skill-bar-inner bg-primary h-2.5 rounded-full" style="width: 0%;" data-level="90"></div>
+                            </div>
+                        </div>
+
+                    <!-- Simple Bar Chart (using flex/grid for visual 'graph' effect) -->
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-secondary">Soft Skills Focus</h3>
+                        <div class="flex flex-col space-y-4 items-start">
+                            <!-- Bar 1 -->
+                            <div class="w-full">
+                                <span class="text-sm">Problem Solving</span>
+                                <div class="flex items-center space-x-2 mt-1">
+                                    <div class="h-6 bg-green-500 rounded-xl" style="width: 95%;"></div>
+                                    <span class="text-xs font-bold">95%</span>
+                                </div>
+                            </div>
+                            <!-- Bar 2 -->
+                            <div class="w-full">
+                                <span class="text-sm">Team Collaboration</span>
+                                <div class="flex items-center space-x-2 mt-1">
+                                    <div class="h-6 bg-yellow-500 rounded-xl" style="width: 88%;"></div>
+                                    <span class="text-xs font-bold">88%</span>
+                                </div>
+                            </div>
+                            <!-- Bar 3 -->
+                            <div class="w-full">
+                                <span class="text-sm">Adaptability</span>
+                                <div class="flex items-center space-x-2 mt-1">
+                                    <div class="h-6 bg-red-500 rounded-xl" style="width: 82%;"></div>
+                                    <span class="text-xs font-bold">82%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-sm text-slate-400 mt-8 italic">
+                            *Competency levels are self-assessed and reflect practical experience over time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Education</h2>
+
+                <div class="space-y-8">
+                    <!-- Degree 1: Master's or B.Tech -->
+                    <div class="flex flex-col sm:flex-row bg-slate-50 p-6 rounded-xl shadow-md border-l-4 border-secondary animate-[fadeIn_0.5s_ease-out_forwards]">
+                        <div class="sm:w-1/3 mb-4 sm:mb-0">
+                            <p class="text-sm font-semibold text-primary">2019 – 2023</p>
+                            <p class="text-xs text-gray-500">Full-time Program</p>
+                        </div>
+                        <div class="sm:w-2/3">
+                            <h3 class="text-xl font-semibold text-slate-800">Bachelor of Technology in Computer Science</h3>
+                            <p class="text-gray-600 mt-1">Gujarat Technological University (GTU) | Ahmedabad, India</p>
+                            <p class="text-sm text-gray-500 mt-2">Relevant coursework included Data Structures & Algorithms, Database Management Systems, and Web Technologies. Graduated with honors (8.5 CGPA).</p>
+                        </div>
+                    </div>
+
+                    <!-- Degree 2: High School/Intermediate -->
+                    <div class="flex flex-col sm:flex-row bg-slate-50 p-6 rounded-xl shadow-md border-l-4 border-secondary animate-[fadeIn_0.7s_ease-out_forwards]">
+                        <div class="sm:w-1/3 mb-4 sm:mb-0">
+                            <p class="text-sm font-semibold text-primary">2017 – 2019</p>
+                            <p class="text-xs text-gray-500">Pre-University</p>
+                        </div>
+                        <div class="sm:w-2/3">
+                            <h3 class="text-xl font-semibold text-slate-800">Higher Secondary School Certificate (HSC)</h3>
+                            <p class="text-gray-600 mt-1">Vivekananda High School | Gandhinagar, India</p>
+                            <p class="text-sm text-gray-500 mt-2">Focused on Physics, Chemistry, and Mathematics (PCM). Developed strong analytical and problem-solving foundations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Featured Projects</h2>
+
+                <!-- Projects Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Project Card 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300 transform hover:scale-[1.02] animate-[fadeIn_0.5s_ease-out_forwards]">
+                        <img src="https://placehold.co/600x400/374151/ffffff?text=E-commerce+Platform" alt="E-commerce Platform" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-slate-800 mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                A Web application built with HTML,CSS,React,Node.js, and MongoDB, featuring user authentication, payment processing, and admin dashboards.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">React</span>
+                                <span class="text-xs font-medium text-green-700 bg-green-100 px-2 py-1 rounded-full">Node.js</span>
+                                <span class="text-xs font-medium text-yellow-700 bg-yellow-100 px-2 py-1 rounded-full">MongoDB</span>
+                                <span class="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">HTML</span>
+                                <span class="text-xs font-medium text-yellow-700 bg-yellow-100 px-2 py-1 rounded-full">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300 transform hover:scale-[1.02] animate-[fadeIn_0.7s_ease-out_forwards]">
+                        <img src="https://placehold.co/600x400/4b5563/ffffff?text=Data+Visualization+Tool" alt="Data Visualization Tool" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-slate-800 mb-2">Real-time Data Dashboard</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Interactive dashboard using D3.js and Angular to display live streaming data with customizable charts and filter options.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">Angular</span>
+                                <span class="text-xs font-medium text-pink-700 bg-pink-100 px-2 py-1 rounded-full">D3.js</span>
+                                <span class="text-xs font-medium text-blue-700 bg-blue-100 px-2 py-1 rounded-full">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300 transform hover:scale-[1.02] animate-[fadeIn_0.9s_ease-out_forwards]">
+                        <img src="https://placehold.co/600x400/6b7280/ffffff?text=Mobile+App+Concept" alt="Mobile App Concept" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-slate-800 mb-2">KollageKit</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Mobile-first design focusing on accessibility and usability. Backend powered by Firebase for real-time synchronization.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">React Native</span>
+                                <span class="text-xs font-medium text-orange-700 bg-orange-100 px-2 py-1 rounded-full">Firebase</span>
+                                <span class="text-xs font-medium text-purple-700 bg-purple-100 px-2 py-1 rounded-full">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Certificates Section -->
+        <section id="certs" class="py-20 bg-slate-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Certifications & Awards</h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Certificate Item 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary animate-[fadeIn_0.5s_ease-out_forwards]">
+                        <h3 class="text-xl font-semibold text-slate-800">OOPs in Python</h3>
+                        <p class="text-gray-600 mt-1">Scaler | Issued: March 2025</p>
+                        <p class="text-sm text-gray-500 mt-2">Demonstrated mastery of advanced Python concepts, including Object-Oriented Programming (OOP) principles, inheritance, and encapsulation.</p>
+                    </div>
+
+                    <!-- Certificate Item 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary animate-[fadeIn_0.7s_ease-out_forwards]">
+                        <h3 class="text-xl font-semibold text-slate-800">JavaScript</h3>
+                        <p class="text-gray-600 mt-1">GeekForGeeks | Issued: Sep 2025</p>
+                        <p class="text-sm text-gray-500 mt-2">Mastered modern JavaScript concepts including asynchronous programming, modules, and functional techniques.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary animate-[fadeIn_0.7s_ease-out_forwards]">
+                        <h3 class="text-xl font-semibold text-slate-800">Data Dashboard And Visualization</h3>
+                        <p class="text-gray-600 mt-1">Kraggle | Issued: Oct 2025</p>
+                        <p class="text-sm text-gray-500 mt-2">Expertise validated in cleaning, analyzing, and presenting complex datasets effectively..</p>
+                    </div>
+
+                    <!-- Certificate Item 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary animate-[fadeIn_0.9s_ease-out_forwards]">
+                        <h3 class="text-xl font-semibold text-slate-800">Blockchain</h3>
+                        <p class="text-gray-600 mt-1">Kerala | Issued: Nov 2052</p>
+                        <p class="text-sm text-gray-500 mt-2">Certified understanding of core blockchain architecture, cryptographic principles, and distributed ledger technologies..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="py-20 bg-dark-bg text-light-text">
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-4 text-white">Let's Connect</h2>
+                <p class="text-slate-300 mb-8">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                </p>
+
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center justify-center space-x-3">
+                        <span class="text-primary font-bold">Email:</span>
+                        <a href="mailto:harsharaj4904@gmail.com" class="text-light-text hover:text-primary transition duration-150">pratik.patel@example.com</a>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3">
+                        <span class="text-primary font-bold">LinkedIn:</span>
+                        <a href="https://www.linkedin.com/in/harshavardhan0509/" class="text-light-text hover:text-primary transition duration-150" target="_blank">Harsha Vardhan-linkedin</a>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3">
+                        <span class="text-primary font-bold">GitHub:</span>
+                        <a href="https://github.com/HarshaVardhan06-byte" class="text-light-text hover:text-primary transition duration-150" target="_blank">HarshaVardhan06-byte</a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl shadow-xl">
+                    <p class="text-lg font-semibold text-secondary mb-3">Send a Quick Message</p>
+                    <form onsubmit="handleFormSubmit(event)">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 rounded-lg bg-slate-700 border border-slate-600 placeholder-slate-400 text-light-text focus:ring-primary focus:border-primary">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-lg bg-slate-700 border border-slate-600 placeholder-slate-400 text-light-text focus:ring-primary focus:border-primary">
+                        <textarea placeholder="Your Message" rows="4" class="w-full p-3 mb-4 rounded-lg bg-slate-700 border border-slate-600 placeholder-slate-400 text-light-text focus:ring-primary focus:border-primary"></textarea>
+                        <button type="submit" class="w-full p-3 font-medium rounded-xl text-white bg-primary hover:bg-secondary transition duration-300 transform hover:scale-[1.01]">
+                            Send Message
+                        </button>
+                    </form>
+                    <p id="form-message" class="mt-4 text-sm text-green-400 hidden">Message sent successfully (simulated)!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center p-4">
+        <p class="text-sm text-gray-400">&copy; 2025 Harsha Vardhan R. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Smooth scrolling and mobile menu toggle logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const skillSection = document.getElementById('skills');
+            const skillBars = document.querySelectorAll('.skill-bar-inner');
+
+            // 1. Mobile Menu Toggle
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // 2. Skill Bar Animation (Intersection Observer)
+            // This makes the skill bars animate only when they come into view,
+            // which provides a nice interactive effect (the "bars and graphs" animation).
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2 // Trigger when 20% of the section is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // When the section is visible, start the animation
+                        skillBars.forEach(bar => {
+                            const level = bar.getAttribute('data-level');
+                            // Set the final width to trigger the CSS transition
+                            bar.style.width = `${level}%`;
+                        });
+                        // Stop observing once animation has run
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Start observing the skills section
+            if (skillSection) {
+                observer.observe(skillSection);
+            }
+
+            // 3. Simulated Form Submission
+            window.handleFormSubmit = function(event) {
+                event.preventDefault();
+                // In a real application, you would send this data to a server (e.g., Firebase, Formspree).
+                // Here, we just simulate success.
+                const formMessage = document.getElementById('form-message');
+                formMessage.classList.remove('hidden');
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                    event.target.reset(); // Clear form fields
+                }, 3000);
+            };
+        });
+    </script>
+</body>
+</html>
+>>>>>>> fe9e04e (My specific change,updatingeducation section)
